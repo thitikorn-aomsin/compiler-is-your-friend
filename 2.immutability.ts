@@ -9,9 +9,13 @@ Questions:
 2.1) without changing the number 42;
 2.2) such that cause of the bug can be spotted by the compiler at *compile time*.
 3) What did you learn from this exercise?
+
+Ans :
+1. ตัวแปร x ถูกเปลี่ยนแปลงค่าจนเหลือ 0 และจำนวนที่หารด้วยตัวแปร x ที่มีค่าเท่ากับ 0 จะได้ infinity
+3. เรียนรู้ประกาศตัวแปรที่เปลี่ยนแปลงค่าไม่ได้เพื่อเช็คใน compile time
 */
 function safeDivide(): number {
-    let x: number = 42;
+    const x: number = 42 ;
 
     if (x == 0) throw new Error("x should not be 0");
 
@@ -19,3 +23,5 @@ function safeDivide(): number {
 
     return 42 / x;
 }
+
+console.log(safeDivide());

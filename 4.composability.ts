@@ -69,4 +69,7 @@ Think. Compare and contrast the:
 Question:
 1) What did you learn from this problem? Why would we want to refactor the code to be
 like the Composable implementation?
+
+Ans :
+1. I learn don't write code repeat
 */
